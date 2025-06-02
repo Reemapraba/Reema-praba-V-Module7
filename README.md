@@ -160,3 +160,35 @@ for i in range(n):
 ![image](https://github.com/user-attachments/assets/b768db01-f4f2-4fd7-87aa-81c81fd028dd)
 
 ### Result: Thus, the given program is implemented and executed successfully .
+# Ex No 7.5: SEB - Factorial
+### Aim:
+To write a Python program to calculate the difference between the factorials of two numbers using recursion.
+
+### Algorithm:
+
+**STEP 1:** Start.  
+**STEP 2:** Define a recursive function `fact(num)`:
+- If `num <= 0`, return 1.
+- Else, return `num * fact(num - 1)`.  
+**STEP 3:** Accept two integer inputs `a` and `b` from the user.  
+**STEP 4:** Call the `fact()` function on both `a` and `b`.  
+**STEP 5:** Print the result of `fact(a) - fact(b)`.  
+**STEP 6:** Stop.
+
+### Program:
+```python
+def fact(num):
+    if num <= 0:
+        return 1
+    return num * fact(num - 1)
+
+a = int(input())
+b = int(input())
+print(fact(a) - fact(b))
+```
+### Output:
+![image](https://github.com/user-attachments/assets/0451e10e-1a26-4c9f-992b-07faf897a2d4)
+### Result:
+Thus the given program was executed Successfully.
+
+
